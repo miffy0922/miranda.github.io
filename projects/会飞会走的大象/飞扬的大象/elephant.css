@@ -1,0 +1,295 @@
+body{
+    background-color: #d6f0cc;
+}
+
+.background {
+    position: absolute;
+    top: 50%;
+    width: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.body {
+    background: linear-gradient(to bottom, #cfcfcf 0%, #9c9c9c 70%);
+    border: 1px solid #808080;
+    border-radius: 100px 50px 70px 60px;
+    height: 165px;
+    position: relative;
+    width: 276px;
+    z-index: 1;
+}
+
+.tail {
+    border-top: 7px solid #808080;
+    border-radius: 50%;
+    height: 50px;
+    position: absolute;
+    transform: translate3d(-3%, 69%, 0) rotateZ(-20deg);
+    width: 64px;
+}
+.tail:before {
+    border-top: 5px solid #C2C2C2;
+    border-radius: 50%;
+    content: '';
+    height: 50px;
+    position: absolute;
+    width: 64px;
+    top: -6px;
+}
+
+.head {
+    background: #C2C2C2;
+    border-radius: 50%;
+    border-top: 1px solid #808080;
+    box-shadow: -1px 1px 2px #808080;
+    height: 150px;
+    position: absolute;
+    transform: translate(114%, -25%);
+    width: 155px;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: knock;
+}
+
+@-webkit-keyframes knock{
+    from{transform: rotate(0deg) translate(114%, -25%);}
+    to{transform: rotate(3deg) translate(114%, -25%);}
+}
+
+.eyes:before, .eyes:after {
+    background-color: #FDFDFD;
+    border-radius: 50%;
+    bottom: -48px;
+    content: '';
+    height: 10px;
+    position: absolute;
+    width: 10px;
+}
+
+.eyebrows {
+    background: linear-gradient(to top, #C2C2C2 20%, #9c9c9c 100%);
+    border-radius: 10px;
+    border-top: 1px solid #808080;
+    bottom: 88px;
+    height: 20px;
+    left: 92px;
+    position: absolute;
+    width: 60px;
+}
+
+.eyes {
+    left: 60%;
+    position: absolute;
+    top: 6%;
+}
+.eyes:before {
+    left: 41px;
+}
+.eyes:after {
+    left: 10px;
+}
+
+.ear {
+    background: linear-gradient(to left, #C2C2C2 10%, darkgray 100%);
+    border-bottom: 1px solid #808080;
+    border-left: 1px solid #808080;
+    border-top: 1px solid #808080;
+    border-radius: 60px 0 0 50%;
+    height: 110px;
+    left: -22px;
+    position: absolute;
+    top: 25px;
+    transform: rotateZ(-10deg);
+    width: 60px;
+}
+
+.mouth {
+    background: linear-gradient(to bottom, #C2C2C2 50%, darkgray 100%);
+    border-radius: 0 100% 0 0;
+    border-top: 2px solid #808080;
+    height: 160px;
+    left: 83%;
+    position: absolute;
+    top: 35%;
+    width: 30px;
+}
+.mouth:before {
+    background-color: darkgray;
+    border-bottom: 1px solid #808080;
+    border-left: 1px solid #808080;
+    border-radius: 8px;
+    bottom: 0;
+    content: '';
+    height: 15px;
+    left: -5px;
+    position: absolute;
+    width: 40px;
+}
+
+.fang-front, .fang-back {
+    border-bottom: 12px solid #FFF;
+    border-radius: 50%;
+    height: 40px;
+    position: absolute;
+    -webkit-transform: rotateZ(20deg);
+    transform: rotateZ(20deg);
+    width: 50px;
+}
+
+.fang-front {
+    box-shadow: 0px 1px 0px #808080;
+    left: 100px;
+    top: 100px;
+}
+.fang-front:before {
+    background-color: #C2C2C2;
+    bottom: -10px;
+    content: '';
+    height: 45px;
+    left: -5px;
+    position: absolute;
+    width: 15px;
+}
+.fang-front:after {
+    background-color: #C2C2C2;
+    border-radius: 0 50% 50% 0;
+    bottom: -14px;
+    box-shadow: 1px 1px 0px #808080;
+    content: '';
+    height: 21px;
+    left: 6px;
+    position: absolute;
+    -webkit-transform: rotateZ(20deg);
+    transform: rotateZ(20deg);
+    width: 15px;
+}
+
+.fang-back {
+    border-bottom-color: #e6e6e6;
+    left: 115px;
+    top: 95px;
+    z-index: -1;
+}
+.fang-back:before {
+    background-color: #C2C2C2;
+    bottom: -10px;
+    content: '';
+    height: 25px;
+    position: absolute;
+    width: 30px;
+}
+
+div[class^="leg-"] {
+    border-left: 1px solid #808080;
+    height: 88px;
+    position: absolute;
+    width: 50px;
+    top:128px;
+}
+div[class^="leg-"]:before {
+    background-color: rgba(74, 74, 74, 0.53);
+    border-radius: 50%;
+    bottom: -30px;
+    box-shadow: 0 0 2px rgba(74, 74, 74, 0.53);
+    content: '';
+    height: 10px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%) rotateZ(0deg);
+    width: 50px;
+}
+
+.leg-front {
+    background-color: #9c9c9c;
+    top: 100%;
+    z-index: 1;
+}
+
+.leg-front .foot {
+    background-color: #9c9c9c;
+}
+
+.leg-back {
+    background-color: #828282;
+    top: 95%;
+}
+.leg-back .foot {
+    background-color: #828282;
+}
+.leg-back .foot:before, .leg-back .foot:after {
+    background-color: #bababa;
+}
+
+.leg-1 {
+    right: 48.5%;
+    transform: rotate(25deg);
+    -webkit-animation-duration: 2s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: walk;
+}
+
+.leg-2 {
+    right: 55.5%;
+    transform: rotate(-25deg);
+    -webkit-animation-duration: 2s;
+    -webkit-animation-direction: alternate-reverse;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: walk;
+}
+
+.leg-3 {
+    right: -1%;
+    transform: rotate(-25deg);
+    -webkit-animation-duration: 2s;
+    -webkit-animation-direction: alternate-reverse;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: walk;
+}
+
+.leg-4 {
+    right: 6%;
+    transform: rotate(25deg);
+    -webkit-animation-duration: 2s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: walk;
+}
+
+@-webkit-keyframes walk{
+    from{transform: rotate(-30deg);}
+    to{transform: rotate(30deg);}
+}
+
+.foot:before, .foot:after {
+    background-color: #E0E0E0;
+    border-radius: 10px 10px 0 0;
+    bottom: 0;
+    content: '';
+    height: 15px;
+    position: absolute;
+    width: 11px;
+}
+
+.foot {
+    border-radius: 25px 25px 35% 40%;
+    bottom: -17.5px;
+    box-shadow: -1px 1px 0 #808080;
+    height: 35px;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    transform: translateX(-49%) rotateZ(0deg);
+    width: 55px;
+}
+.foot:before {
+    right: -7.5px;
+}
+.foot:after {
+    bottom: -3px;
+    right: 5px;
+}
+
+

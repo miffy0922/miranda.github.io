@@ -1,0 +1,178 @@
+/*==============================================================
+    common.css
+==============================================================*/
+
+/*  normalize.css Start
+==============================================================*/
+
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: #111;
+    background: #fff;
+}
+
+body {
+    font: 12px "宋体", "Arial Narrow", HELVETICA;
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: #2d374b;
+    text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+    font-family: 微软雅黑;
+}
+
+a:visited {
+    color: #98afab;
+    text-decoration: none;
+}
+
+a:link {
+    color: #596d69;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8fb6cc;
+    text-decoration: none;
+    background: #f6f6f6;
+}
+
+em {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+    margin-top: 5px;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+
+
+/*  normalize.css End
+==============================================================*/
+
+
+/*  commonContent.css Start
+==============================================================*/
+
+/*颜色类*/
+
+/*全局文字颜色*/
+
+.text-color {
+    color: #333;
+}
+
+/*背景颜色*/
+
+.background {
+    background-color: #e0eff1;
+}
+
+/*    公共样式
+=====================================================*/
+
+
+/*导航栏文字*/
+
+.nav h2 {
+    display: block;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+
+/*===========================================================
+    双飞翼布局相关类
+===========================================================*/
+
+/*父容器*/
+
+.wrapper {
+    overflow: hidden;
+    padding: 20px 50px;
+}
+
+/*左侧导航*/
+
+.nav {
+    width: 200px;
+    float: left;
+    margin-left: -100%;
+}
+
+/*中间内容包裹容器*/
+
+.center {
+    width: 100%;
+    float: left;
+}
+
+/*内容*/
+
+.center-content {
+    margin: 0 265px 0 200px;
+    padding-left: 20px;
+}
+
+/*右边栏*/
+
+.aside {
+    width: 265px;
+    height: 200px;
+    float: left;
+    margin-left: -265px;
+}
+
+/*  commonContent.css End
+==============================================================*/

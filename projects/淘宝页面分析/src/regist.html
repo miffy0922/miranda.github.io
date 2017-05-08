@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regist</title>
+</head>
+<body>
+    <form action="login.html" method="post">
+        姓名：<input type="text" name="username" placeholder="请输入真实姓名" required="required"><sup>*</sup>
+        <br>
+        性别：
+        <select>
+            <option value="男">男</option>
+            <option value="女">女</option>
+        </select>
+        <br>
+        生日：<input type="date" name="birthday">
+        <br>
+        婚否：<input type="radio" name="婚否" value="未婚">未婚<input type="radio" name="婚否" value="已婚">已婚
+        <br>
+        技能：<input type="checkbox" name="skills" value="HTML/HTML5">HTML/HTML5
+        <input type="checkbox" name="skills" value="CSS/CSS3">CSS/CSS3
+        <input type="checkbox" name="skills" value="JavaScript">JavaScript
+        <input type="checkbox" name="skills" value="jQuery">jQuery
+        <input type="checkbox" name="skills" value="BootStrap">BootStrap
+        <input type="checkbox" name="skills" value="node.js">node.js
+        <input type="checkbox" name="skills" value="MongoDB">MongoDB
+        <input type="checkbox" name="skills" value="Vue.js">Vue.js
+        <input type="checkbox" name="skills" value="React.js">React.js
+        <br>
+        邮箱：<input type="email" name="email" placeholder="请输入邮箱号" required="required"><sup>*</sup>
+        <br>
+        GitHub：<input type="url" name="blog" placeholder="请输入GitHub链接">
+        <br>
+        密码：<input type="password" name="pwd" required="required" maxlength="16" minlength="8"><sup>*</sup>
+        <br>
+        头像：<input type="file" name="头像" value="选择文件">
+        <br>
+        <textarea name="opinion" id="" cols="50" rows="10" placeholder="...自我评价..." required="required"></textarea><sup>*</sup>
+        <br>
+        <input type="submit" name="sub" value="提交">
+    </form>
+</body>
+</html>
